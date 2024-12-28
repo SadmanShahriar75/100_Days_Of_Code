@@ -23,6 +23,10 @@ int main(){
     string is_citizen ;
     cout << "Are you a citizen? (yes/no): ";
     cin >> is_citizen;
+    for(auto& c : is_citizen){
+        c = tolower(c);
+    }
+  
     
   
     votingEligibility(age, is_citizen);

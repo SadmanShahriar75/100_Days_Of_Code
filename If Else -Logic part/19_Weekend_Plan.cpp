@@ -21,6 +21,10 @@ int main(){
     string weather;
     cout << "Is the weather sunny? (yes/no): ";
     cin >> weather;
+    for(auto& c : weather){
+        c = tolower(c);
+    }
+  
 
     float money ;
     cout << "How much money do you have? ";

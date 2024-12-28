@@ -27,6 +27,10 @@ int main() {
   string light;
   cout << "Enter the traffic light color (red, yellow, green): ";
   cin >> light;
+  for(auto& c : light){
+    c = tolower(c);
+  }
+  
 
   trafficLight(light);
   return 0;

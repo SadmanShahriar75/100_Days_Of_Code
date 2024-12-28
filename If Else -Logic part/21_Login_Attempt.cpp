@@ -1,4 +1,4 @@
-// 11. Login Attempt with Multiple Conditions
+// 21. Login Attempt with Multiple Conditions
 // Task: Only allow login if the user enters the correct username and the account is active.
 
 
@@ -24,6 +24,10 @@ int main(){
 
     cout << "Is your account active? (yes/no):  ";
     cin >> is_active;
+    for(auto& c : is_active){
+        c = tolower(c);
+    }
+  
 
   
     loginAttempt (username, is_active);

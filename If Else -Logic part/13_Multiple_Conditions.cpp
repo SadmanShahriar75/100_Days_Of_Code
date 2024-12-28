@@ -24,6 +24,10 @@ int main(){
     string has_income;
     cout << "Do you have a steady income? (yes/no):  ";
     cin >> has_income;
+    for(auto& c : has_income){
+        c = tolower(c);
+    }
+  
     
     multipleConditions(credit_score, has_income);
     return 0;  
